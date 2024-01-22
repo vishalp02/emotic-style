@@ -75,4 +75,4 @@ Extract the files and put them in specified directory of the project.
 │   |    ├── s_mscoco 
 ```
 ## Results
-All the experiment results can be found in docs folder. 
+All the experiment results can be found in docs folder. Refer [Experiments.xlsx](https://github.com/vishalp02/emotic-style/blob/main/docs/Results/Experiments.xlsx).
