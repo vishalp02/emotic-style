@@ -12,6 +12,32 @@ extracted from the images previously.
 </div>
 
 ## Setup
+### Dataset
+Emotic, WikiArt and Odeuropa datasets used for this project. All the datasets can be found [here](https://zenodo.org/records/10501312).
+Extract the files and put them in specified directory of the project.
+* Emotic/Emotic-Style dataset should be in the following directory for the training and testing:
+```
+├── emotic19
+│   ├── emotic
+│   |    ├── ade20k
+│   |    ├── emodb_small
+│   |    ├── framesdb
+│   |    ├── mscoco 
+```
+* Emotic as content and WikiArt as style dataset should be in the following directory for the style transfer:
+```
+├── input
+│   ├── content
+│   |    ├── ade20k
+│   |    ├── emodb_small
+│   |    ├── framesdb
+│   |    ├── mscoco 
+│   ├── style
+│   |    ├── s_ade20k
+│   |    ├── s_emodb_small
+│   |    ├── s_framesdb
+│   |    ├── s_mscoco 
+```
 
 ### Style Transfer
 * Style transfer method from [IEContraAST](https://github.com/HalbertCH/IEContraAST/tree/main) is used for the Style transferring task on emotic dataset.
@@ -48,31 +74,6 @@ python main.py --mode test --data_path proj/ data/emotic19/emotic_pre --experime
 python main.py --mode inference --inference_file final_inference_input.txt --experiment_path proj/debug_exp
 ```
 
-## Dataset
-Emotic, WikiArt and Odeuropa datasets used for this project. All the datasets can be found [here](https://zenodo.org/records/10501312).
-Extract the files and put them in specified directory of the project.
-* Emotic/Emotic-Style dataset should be in the following directory for the training and testing:
-```
-├── emotic19
-│   ├── emotic
-│   |    ├── ade20k
-│   |    ├── emodb_small
-│   |    ├── framesdb
-│   |    ├── mscoco 
-```
-* Emotic as content and WikiArt as style dataset should be in the following directory for the style transfer:
-```
-├── input
-│   ├── content
-│   |    ├── ade20k
-│   |    ├── emodb_small
-│   |    ├── framesdb
-│   |    ├── mscoco 
-│   ├── style
-│   |    ├── s_ade20k
-│   |    ├── s_emodb_small
-│   |    ├── s_framesdb
-│   |    ├── s_mscoco 
-```
+
 ## Results
 All the experiment results can be found in docs folder. Refer [Experiments.xlsx](https://github.com/vishalp02/emotic-style/blob/main/docs/Results/Experiments.xlsx).
